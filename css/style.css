@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eff4f5;
+    color: #2b2b2b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem auto;
+    width: 100%;
+    max-width: 780px;
+}
+
+/* title */
+.main-title {
+    text-align: center;
+}
+
+.main-title h2 {
+    margin-bottom: 1.5rem;
+}
+
+.main-title i {
+    font-size: 3rem;
+    color: #f77f00;
+    animation: 1s gift linear 1s infinite alternate;
+    margin-bottom: 1.5rem;
+}
+
+@keyframes gift {
+    from {
+        transform: translateY(15px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* cards */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: #fff;
+    margin: 1rem 0;
+    min-height: 150px;
+    border-radius: 10px;
+}
+
+.about span {
+    background: #3a86ff;
+    color: #fff;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 50px;
+}
+
+.about h3:nth-child(2) {
+    margin-top: 1.5rem;
+}
+
+.about p {
+    color: #555;
+    padding: 0.3rem 0;
+}
+
+/* price */
+.price {
+    background: #eff4f5;
+    padding: 1rem;
+    line-height: 2;
+}
+
+.price span {
+    font-weight: 700;
+}
+
+/* order */
+.order {
+    text-align: center;
+}
+
+.order p {
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    background: #8338ec;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #3a86ff;
+}
+
+@media(max-width: 800px) {
+    .content {
+        display: block;
+        margin: 2rem;
+    }
+
+    .price,
+    .about {
+        margin: 2rem;
+    }
+}
